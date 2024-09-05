@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Kalnia+Glaze:wght@100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalnia+Glaze:wght@100..700&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Kalnia+Glaze:wght@100..700&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    background-color: rgb(248, 248, 145);
+    height: 80px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    font-size: 90px;
+    color: rgb(139, 98, 98);
+    font-family: "Kalnia Glaze", serif;
+
+}
+        .hero {
+            display: flex;
+            width:1521px ;
+           height: 200px;
+            /* border: 1px solid #ec4646; */
+            background: #bbdced;
+            justify-content: center;
+            align-items: center;
+        }
+        .box-img{
+            display: flex;
+            width:900px;
+            
+            /* border: 1px solid #0013ea; */
+            justify-content: center;
+        }
+
+        
+            .box-txt{
+            display: flex;
+            width: 90%;
+            /* border: 1px solid #3c0a37; */
+            flex-flow: row wrap;
+            height: 275px;
+            
+
+        }
+        .box-txt span {
+            color: rgb(60, 61, 24);
+            letter-spacing: 10px;
+            text-transform: uppercase;
+            font-family: "Anton", sans-serif;
+           
+    
+            
+           
+        }
+
+
+        .box-txt h2{
+            font-family: "Bebas Neue", sans-serif;
+
+            font-size: 40px;
+            color: #a43e7b;
+            font-weight: 700;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            line-height: 40px;
+            
+
+        }
+        .box-txt p{ 
+            color: rgb(4, 35, 67);
+            text-transform: uppercase;
+
+
+        }
+
+
+        .btn-hero{
+            background-color: #d96abb;
+            padding: 5px 20px;
+            text-decoration: none;
+            font-family: "Bebas Neue", sans-serif;
+            color: #000000;
+            border-radius: 70px;
+            transition: 0.5s all;
+            margin-bottom: 400px;
+           
+        }
+        .btn-hero:hover{
+            background: #7459ce;
+            font-size: 18px;
+
+        }
+            
+            .box-item{
+                width: 90%;
+                height: 200px;
+                
+        
+                margin: 60px;
+                padding: 20px ;
+                text-transform: uppercase;
+                border-radius: 20px;
+                align-items: center;
+                color: #000000;
+                
+                
+
+
+            }
+
+              .especialidade {
+            display: flex;
+            width:1520px ;
+            height: 40px;
+            /* border: 1px solid #ec4646; */
+            background: #f6f26d;
+            justify-content: center;
+           
+}
+         .m-top{
+            margin-top: 10px;
+         }
+
+         footer {
+            background: #ffffff;
+            height: 10px;
+            margin-top: 5px;
+            color: #4c4a12;
+            text-align: center;
+            font-size: 18px;
+            
+          
+
+         }
+         .whats{
+            position: fixed;
+            right: 10px;
+            bottom: 10px;
+         }
+
+     
+
+         

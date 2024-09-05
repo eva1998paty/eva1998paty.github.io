@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sites</title>
+    <link rel="stylesheet" href="ESTILO.CSS">
+</head>
+<body>
+   <header>
+    <h1>LUMINA HAIR</h1>
+   </header>
+
+
+   
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Campo de Pesquisa Grande</title>
+       <style>
+           .search-container {
+               position: relative;
+               width: 100%;
+               max-width: 1000px;
+    
+               margin: 0 auto;
+           }
+           #search {
+               width: 80%;
+               padding: 15px;
+               font-size: 16px;
+               border: 1px solid #ccc;
+               border-radius: 4px;
+               box-sizing: border-box;
+           }
+           #search-button {
+               width: 10%;
+               padding: 15px;
+               font-size: 16px;
+               border: 1px solid #cccccc;
+               border-radius: 4px;
+               background-color: #f5f979;
+               color: rgb(0, 0, 0);
+               cursor: pointer;
+               box-sizing: border-box;
+               border-left: none;
+           }
+           #search-button:hover {
+               background-color: #0073ee;
+           }
+           .suggestions {
+               
+               max-height: 150px;
+               overflow-y: auto;
+               position: absolute;
+               background: rgb(255, 255, 255);
+               width: 100%;
+               z-index: 1000;
+           }
+           .suggestion-item {
+               padding: 8px;
+               cursor: pointer;
+           }
+           .suggestion-item:hover {
+               background-color: #ffffff;
+           }
+           .search-form {
+               display: flex;
+               align-items: center;
+           }
+       </style>
+   </head>
+   <body>
+       
+       <div class="search-container">
+           <form class="search-form" action="resultados.html" method="get">
+               <input type="text" id="search" name="q" placeholder="Digite sua pesquisa..." autocomplete="off">
+               <button type="submit" id="search-button">Pesquisar</button>
+            
+
+
+           </form>
+
+
+
+
+
+           <div id="suggestions" class="suggestions"></div>
+       </div>
+   
+       <script>
+               const suggestions = [
+            'Creme de Cabelo Hidratante',
+            'Creme de Cabelo Nutritivo',
+            'Creme de Cabelo Anti-Frizz',
+            'Creme de Cabelo Reparador',
+            'Creme de Cabelo Desembaraçante',
+            'Creme de Cabelo Defrizante',
+            'Creme de Cabelo Volume Máximo',
+            'Creme de Cabelo Anti-Queda',
+            'Creme de Cabelo Fortalecedor',
+            'Creme de Cabelo Suavizante'
+        ];
+
+
+
+           const searchInput = document.getElementById('search');
+           const suggestionsBox = document.getElementById('suggestions');
+   
+           searchInput.addEventListener('input', function() {
+               const query = searchInput.value.toLowerCase();
+               suggestionsBox.innerHTML = '';
+               if (query) {
+                   const filteredSuggestions = suggestions.filter(item => item.toLowerCase().includes(query));
+                   filteredSuggestions.forEach(item => {
+                       const div = document.createElement('div');
+                       div.textContent = item;
+                       div.classList.add('suggestion-item');
+                       div.addEventListener('click', () => {
+                           searchInput.value = item;
+                           suggestionsBox.innerHTML = '';
+                       });
+                       suggestionsBox.appendChild(div);
+                   });
+               }
+           });
+   
+           document.addEventListener('click', function(event) {
+               if (!event.target.closest('.search-container')) {
+                   suggestionsBox.innerHTML = '';
+               }
+           });
+       </script>
+   </body>
+   </html>
+
+
+
+   <section class="hero">
+    <div class="box-img">
+        <img id="creme" src="img/creme.webp">
+        <img id="creme" src="img/creme2.webp">  
+        <img id="creme" src="img/logo.png">
+        <img id="creme" src="img/creme4.webp">
+        <img id="creme" src="img/creme6.webp">
+    </div>
+    
+    <div class="whats">
+        <a target="_blank" >
+        <img width="50" src="img/FAQ (2).webp">
+        <img width="50" src="img/OIP.webp">
+</section>
+
+
+
+
+
+
+
+</section>
+<section class="especialidade">
+    <div class="box-item">
+        <h3>Lumina Hair - Creme de Cabelo</h3>
+        <p>
+            não é apenas mais um creme de cabelo; é uma verdadeira revolução no cuidado capilar. Desenvolvido com uma combinação inovadora de tecnologias avançadas e ingredientes raros e preciosos da natureza, este creme oferece uma experiência única e resultados excepcionais.
+        
+            <h3> Ingredientes Exclusivos</h3>
+        <p>Tecnologia de Hidratação Avançada: 
+            Óleo de Marula
+            Extrato de Flor de Lotus Azul
+            Proteínas do Péptido de Seda
+            Complexo de Minerais do Mar Morto
+            Tecnologia de Liberação Controlada
+            Infusão de Caviar de Limão
+            Bioenzimas de Teca
+           
+            
+            
+            
+    </div>
+   
+        <div class="box-item">
+            <h3> Ingredientes Principais: </h3>
+            <p> 
+
+                Óleo de Argan: Rico em ácidos graxos essenciais e vitamina E, proporciona hidratação intensa e proteção contra danos.
+                Óleo de Coco: Nutre profundamente e melhora a elasticidade dos fios.
+                Proteínas da Seda: Fortalecem e suavizam o cabelo, proporcionando brilho e maciez.
+                Extratos Botânicos: Acalmam o couro cabeludo e promovem um equilíbrio saudável.
+                
+                
+        </div>
+                
+    
+
+
+</div>
+
+<script>
+
+    //pegar o elemento
+    const tigela = document.getElementById ('tigela');
+
+       //evendo quando o  mouse estiver por cima da imagem
+      tigela.addEventListener ('mouseover', function(){
+           tigela.src = "img/cop (1).webp";
+        
+      });
+
+
+  //evendo quando o mouse sair de cima da imagem
+      tigela.addEventListener ('mouseout', function(){
+           tigela.src = "img/cop (3).webp";
+        
+        
+      });
+
+
+</script>
+
+</body>
+
+</html>
+
+<a href="#" class=  "m-top btn-hero" ></a>
+</div>
+</section>
